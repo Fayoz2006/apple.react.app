@@ -1,44 +1,45 @@
 import React, { useState } from "react";
-import SVGicons from "../../Components/SVGicons";
+import SVGicons from "../../Components/SVGicons/SVGicons";
 import "./../../CSS/production/Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   let arr_links = [
     {
       text: "Store",
-      link: "https://www.apple.com/store",
+      link: "/store",
     },
     {
       text: "Mac",
-      link: "https://www.apple.com/mac/",
+      link: "/mac",
     },
     {
       text: "iPad",
-      link: "https://www.apple.com/ipad/",
+      link: "/ipad",
     },
     {
       text: "iPhone",
-      link: "https://www.apple.com/iphone/",
+      link: "/iphone",
     },
     {
       text: "Watch",
-      link: "https://www.apple.com/watch/",
+      link: "/watch",
     },
     {
       text: "Airpods",
-      link: "https://www.apple.com/airpods/",
+      link: "/airpods",
     },
     {
       text: "TV & Home",
-      link: "https://www.apple.com/tv-home/",
+      link: "/tv-home",
     },
     {
       text: "Only on Apple",
-      link: "https://www.apple.com/services/",
+      link: "/services",
     },
     {
       text: "Accessories",
-      link: "https://www.apple.com/shop/accessories/all",
+      link: "/accessories/all",
     },
     {
       text: "Support",
@@ -48,6 +49,9 @@ const Header = () => {
 
   let [isOpen, setIsOpen] = useState(false);
   let [isSearch, setIsSearch] = useState(false);
+  let body = document.body;
+  if (isOpen) body.style.overflow = "hidden";
+  else body.style.overflow = "visible";
   return (
     <header
       style={{
@@ -60,9 +64,9 @@ const Header = () => {
           <SVGicons icon="logo" />
         </a>
         {arr_links.map((item, index) => (
-          <a href={item.link} key={index}>
+          <Link to={item.link} key={index}>
             {item.text}
-          </a>
+          </Link>
         ))}
         <SVGicons icon="search" />
         <SVGicons icon="bag" />
@@ -93,7 +97,10 @@ const Header = () => {
           <a href="https://www.apple.com" className="logo">
             <SVGicons icon="logo-mobile" />
           </a>
-          <SVGicons icon="bag-mobile" />
+          <SVGicons
+            icon="bag-mobile"
+            style={{ opacity: isOpen ? "0%" : "100%" }}
+          />
         </div>
         <div className="navigation">
           <div

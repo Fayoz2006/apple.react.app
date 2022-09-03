@@ -137,128 +137,130 @@ const Footer = () => {
         </p>
       </div>
       <div className="middle-side">
-        <div className="links _pc">
-          <div className="shop-and-learn">
-            <p>Shop and Learn</p>
-            {links.shopLearn.map((item, index) => (
-              <a key={index} href="https://www.apple.com">
-                {item}
-              </a>
-            ))}
-          </div>
-          <div className="services">
-            <p>Services</p>
-            {links.services.map((item, index) => (
-              <a key={index} href="https://www.apple.com">
-                {item}
-              </a>
-            ))}
-            <div className="account">
-              <p>Account</p>
-              {links.account.map((item, index) => (
+        <div className="links">
+          <div className="_pc">
+            <div className="shop-and-learn">
+              <p>Shop and Learn</p>
+              {links.shopLearn.map((item, index) => (
                 <a key={index} href="https://www.apple.com">
                   {item}
                 </a>
               ))}
             </div>
-          </div>
-          <div className="appleStore">
-            <p>Apple Store</p>
-            {links.appleStore.map((item, index) => (
-              <a key={index} href="https://www.apple.com">
-                {item}
-              </a>
-            ))}
-          </div>
-          <div className="business">
-            <p>For Business</p>
-            {links.business.map((item, index) => (
-              <a href="https://www.apple.com" key={index}>
-                {item}
-              </a>
-            ))}
-            <div className="education">
-              <p>For Education</p>
-              {links.education.map((item, index) => (
+            <div className="services">
+              <p>Services</p>
+              {links.services.map((item, index) => (
+                <a key={index} href="https://www.apple.com">
+                  {item}
+                </a>
+              ))}
+              <div className="account">
+                <p>Account</p>
+                {links.account.map((item, index) => (
+                  <a key={index} href="https://www.apple.com">
+                    {item}
+                  </a>
+                ))}
+              </div>
+            </div>
+            <div className="appleStore">
+              <p>Apple Store</p>
+              {links.appleStore.map((item, index) => (
+                <a key={index} href="https://www.apple.com">
+                  {item}
+                </a>
+              ))}
+            </div>
+            <div className="business">
+              <p>For Business</p>
+              {links.business.map((item, index) => (
                 <a href="https://www.apple.com" key={index}>
                   {item}
                 </a>
               ))}
+              <div className="education">
+                <p>For Education</p>
+                {links.education.map((item, index) => (
+                  <a href="https://www.apple.com" key={index}>
+                    {item}
+                  </a>
+                ))}
+              </div>
+              <div className="healthcare">
+                <p>For Healthcare</p>
+                {links.healthcare.map((item, index) => (
+                  <a href="https://www.apple.com" key={index}>
+                    {item}
+                  </a>
+                ))}
+              </div>
+              <div className="govemment">
+                <p>For Govemment</p>
+                {links.govemment.map((item, index) => (
+                  <a href="https://www.apple.com" key={index}>
+                    {item}
+                  </a>
+                ))}
+              </div>
+            </div>
+            <div className="appleValue">
+              <p>Apple Value</p>
+              {links.appleValue.map((item, index) => (
+                <a href="https://www.apple.com" key={index}>
+                  {item}
+                </a>
+              ))}
+              <div className="aboutApple">
+                <p>About Apple</p>
+                {links.aboutApple.map((item, index) => (
+                  <a href="https://www.apple.com" key={index}>
+                    {item}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="_mobile">
+            <div className="shopLearn">
+              <p>Shop and Learn</p>
+              <p>+</p>
+            </div>
+            <div className="services">
+              <p>Services</p>
+              <p>+</p>
+            </div>
+            <div className="account">
+              <p>Account</p>
+              <p>+</p>
+            </div>
+            <div className="appleStore">
+              <p>Apple Store</p>
+              <p>+</p>
+            </div>
+            <div className="business">
+              <p>For Business</p>
+              <p>+</p>
+            </div>
+            <div className="education">
+              <p>For Education</p>
+              <p>+</p>
             </div>
             <div className="healthcare">
               <p>For Healthcare</p>
-              {links.healthcare.map((item, index) => (
-                <a href="https://www.apple.com" key={index}>
-                  {item}
-                </a>
-              ))}
+              <p>+</p>
             </div>
             <div className="govemment">
               <p>For Govemment</p>
-              {links.govemment.map((item, index) => (
-                <a href="https://www.apple.com" key={index}>
-                  {item}
-                </a>
-              ))}
+              <p>+</p>
             </div>
-          </div>
-          <div className="appleValue">
-            <p>Apple Value</p>
-            {links.appleValue.map((item, index) => (
-              <a href="https://www.apple.com" key={index}>
-                {item}
-              </a>
-            ))}
+            <div className="appleValue">
+              <p>Apple Value</p>
+              <p>+</p>
+            </div>
             <div className="aboutApple">
               <p>About Apple</p>
-              {links.aboutApple.map((item, index) => (
-                <a href="https://www.apple.com" key={index}>
-                  {item}
-                </a>
-              ))}
+              <p>+</p>
             </div>
-          </div>
-        </div>
-        <div className="links _mobile">
-          <div className="shopLearn">
-            <p>Shop and Learn</p>
-            <p>+</p>
-          </div>
-          <div className="services">
-            <p>Services</p>
-            <p>+</p>
-          </div>
-          <div className="account">
-            <p>Account</p>
-            <p>+</p>
-          </div>
-          <div className="appleStore">
-            <p>Apple Store</p>
-            <p>+</p>
-          </div>
-          <div className="business">
-            <p>For Business</p>
-            <p>+</p>
-          </div>
-          <div className="education">
-            <p>For Education</p>
-            <p>+</p>
-          </div>
-          <div className="healthcare">
-            <p>For Healthcare</p>
-            <p>+</p>
-          </div>
-          <div className="govemment">
-            <p>For Govemment</p>
-            <p>+</p>
-          </div>
-          <div className="appleValue">
-            <p>Apple Value</p>
-            <p>+</p>
-          </div>
-          <div className="aboutApple">
-            <p>About Apple</p>
-            <p>+</p>
           </div>
         </div>
         <p>
@@ -269,7 +271,9 @@ const Footer = () => {
         </p>
       </div>
       <div className="bottom-side">
-      <a className="_mobile" href="https://www.apple.com">United States</a>
+        <a className="_mobile" href="https://www.apple.com">
+          United States
+        </a>
         <p>Copyright © 2022 Apple Inc. All rights reserved.</p>
         <div className="links">
           <a href="https://www.apple.com">Privacy Policy</a>
@@ -278,7 +282,9 @@ const Footer = () => {
           <a href="https://www.apple.com">Legal</a>
           <a href="https://www.apple.com">Site Map</a>
         </div>
-        <a  className="_pc" href="https://www.apple.com">United States</a>
+        <a className="_pc" href="https://www.apple.com">
+          United States
+        </a>
       </div>
     </footer>
   );

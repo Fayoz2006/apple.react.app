@@ -1,5 +1,5 @@
 import React from "react";
-import "./../../CSS/production/Containers.css";
+import "./../CSS/production/Containers.css";
 
 const ThirdVersion = ({ item }) => {
   return (

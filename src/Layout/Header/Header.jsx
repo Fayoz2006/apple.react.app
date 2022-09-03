@@ -55,7 +55,7 @@ const Header = () => {
   return (
     <header
       style={{
-        height: isOpen ? "100vh" : "48px",
+        height: isOpen ? "100%" : "48px",
         backgroundColor: isOpen ? "#000" : "rgba(0, 0, 0, 0.8)",
       }}
     >
